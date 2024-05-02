@@ -1,1 +1,19 @@
-<h2>Converter</h2>
+<h2>Enhetskonverterare</h2>
+
+<div>
+  <h3>Längd</h3>
+  <label for="meter">Meter:</label>
+  <input type="number" id="meter" [(ngModel)]="meterValue" (input)="updateLength()">
+  <label for="feet">Fot:</label>
+  <input type="number" id="feet" [(ngModel)]="feetValue" (input)="updateLength()"> 
+  <button (click)="resetLength()">Reset</button> 
+</div>
+
+<div>
+  <h3>Temperatur</h3>
+  <label for="celsius">Celsius:</label>
+  <input type="number" id="celsius" [(ngModel)]="celsiusValue" (input)="updateTemperature()">
+  <label for="fahrenheit">Fahrenheit:</label>
+  <input type="number" id="fahrenheit" [(ngModel)]="fahrenheitValue" (input)="updateTemperature()">
+  <button (click)="resetTemperature()">Reset</button>
+</div>
