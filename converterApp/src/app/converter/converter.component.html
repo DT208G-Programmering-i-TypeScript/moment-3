@@ -1,21 +1,24 @@
-<div>
-  <h2>Temperature Converter</h2>
-  <div class="converter-form">
-    <label for="celsius">Celsius:</label>
-    <input id="celsius" type="number" [(ngModel)]="celsiusValue" (ngModelChange)="updateTemperature('celsius')">
-    <label for="fahrenheit">Fahrenheit:</label>
-    <input id="fahrenheit" type="number" [(ngModel)]="fahrenheitValue" (ngModelChange)="updateTemperature('fahrenheit')">
+<main>
+  <div>
+    <h2>Temperature Converter</h2>
+    <div class="converter-form">
+      <label for="celsius">Celsius:</label>
+      <input id="celsius" type="number" [(ngModel)]="celsiusValue" (ngModelChange)="updateTemperature('celsius')">
+      <label for="fahrenheit">Fahrenheit:</label>
+      <input id="fahrenheit" type="number" [(ngModel)]="fahrenheitValue"
+             (ngModelChange)="updateTemperature('fahrenheit')">
+    </div>
+    <button (click)="resetTemperature()">Reset Temperature</button>
   </div>
-  <button (click)="resetTemperature()">Reset Temperature</button>
-</div>
 
-<div>
-  <h2>Length Converter</h2>
-  <div class="converter-form">
-    <label for="meter">Meter:</label>
-    <input id="meter" type="number" [(ngModel)]="meterValue" (ngModelChange)="updateLength('meter')">
-    <label for="feet">Feet:</label>
-    <input id="feet" type="number" [(ngModel)]="feetValue" (ngModelChange)="updateLength('feet')">
+  <div>
+    <h2>Length Converter</h2>
+    <div class="converter-form">
+      <label for="meter">Meter:</label>
+      <input id="meter" type="number" [(ngModel)]="meterValue" (ngModelChange)="updateLength('meter')">
+      <label for="feet">Feet:</label>
+      <input id="feet" type="number" [(ngModel)]="feetValue" (ngModelChange)="updateLength('feet')">
+    </div>
+    <button (click)="resetLength()">Reset Length</button>
   </div>
-  <button (click)="resetLength()">Reset Length</button>
-</div>
+</main>

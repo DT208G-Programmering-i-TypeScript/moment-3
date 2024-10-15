@@ -1,1 +1,54 @@
-<h2>About</h2>
+<div>
+    <h2>About</h2>
+
+
+    <div class="container">
+        <h1>Min arbetsprocess och lärdomar från konverteringsappen</h1>
+
+        <p>När jag började med denna uppgift att skapa en konverteringsapp i Angular, visste jag att jag ville skapa
+            något användarvänligt och praktiskt. Jag bestämde mig för att fokusera på två vanliga konverteringar:
+            temperatur (Celsius till Fahrenheit) och längd (meter till fot).</p>
+
+        <h2>Utmaningar och lösningar</h2>
+
+        <p>Den största utmaningen jag stötte på var att få konverteringen att fungera smidigt i båda riktningarna. Till
+            en början fungerade det bra att konvertera från Celsius till Fahrenheit, men när jag försökte göra det
+            omvända, uppstod problem. Det tog mig ett tag att inse att problemet låg i hur jag hanterade uppdateringen
+            av värdena.</p>
+
+        <p>Lösningen kom när jag insåg att jag behövde ändra min approach. Istället för att ha en enda
+            uppdateringsfunktion, skapade jag separata funktioner för varje konverteringsriktning. Detta, kombinerat med
+            användningen av <code>ngModelChange</code> i template-filen, gjorde att jag kunde få realtidsuppdateringar
+            oavsett vilket inputfält användaren skrev i.</p>
+
+        <h2>Lärdomar</h2>
+
+        <p>Genom detta projekt har jag lärt mig flera viktiga saker:</p>
+
+        <ul>
+            <li><strong>Vikten av användarcentrerad design</strong>: Att skapa en app som är intuitiv och reagerar
+                omedelbart på användarens input gör den mycket mer användbar.</li>
+            <li><strong>Hantering av tvåvägskonverteringar</strong>: Jag lärde mig hur man effektivt hanterar
+                konverteringar i båda riktningarna, vilket är en värdefull kunskap för framtida projekt.</li>
+            <li><strong>Angular-specifika koncept</strong>: Jag fick en djupare förståelse för hur <code>ngModel</code>
+                och <code>ngModelChange</code> fungerar i Angular, och hur man kan använda dem för att skapa responsiva
+                användargränssnitt.</li>
+            <li><strong>Kodstruktur och organisation</strong>: Genom att arbeta med detta projekt insåg jag vikten av
+                att hålla koden välstrukturerad och läsbar, särskilt när man hanterar flera relaterade men separata
+                funktioner.</li>
+        </ul>
+
+        <h2>Slutsatser</h2>
+
+        <p>Sammanfattningsvis har detta projekt varit mycket lärorikt. Det har inte bara förbättrat mina tekniska
+            färdigheter i Angular, utan också gett mig insikter i hur man skapar användarvänliga applikationer. Jag är
+            särskilt nöjd med hur smidigt appen nu fungerar, med realtidsuppdateringar i alla riktningar.</p>
+
+        <p>Framöver ser jag potential att utöka appen med fler konverteringstyper, kanske till och med låta användare
+            lägga till egna konverteringar. Jag tror också att det finns möjlighet att förbättra användargränssnittet
+            ytterligare, kanske genom att lägga till någon form av visuell återkoppling när värdena ändras.</p>
+
+        <p>Detta projekt har definitivt ökat mitt intresse för att skapa praktiska webbapplikationer, och jag ser fram
+            emot att använda dessa kunskaper i framtida projekt.</p>
+    </div>
+</div>
