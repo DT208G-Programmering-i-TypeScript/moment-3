@@ -2,6 +2,10 @@
 
 En användarvänlig konverteringsapplikation byggd med Angular som låter dig enkelt konvertera mellan olika enheter.
 
+## Publicerad webbplats
+
+https://mom-3-converter-app.netlify.app/
+
 ## ✨ Funktioner
 
 - 🌡️ Temperaturkonvertering (Celsius ↔️ Fahrenheit)
